@@ -1,11 +1,11 @@
 ---
-- hosts: ubuntu
+- hosts: all
   become: true
   become_user: root
   tasks:
     - name: copying the file
       copy:
-         src: /tmp/file1
+         src: /home/tejesh/abcd
          dest: /tmp
-         owner: tejesh
+         owner: ubuntu
          mode: 0777
